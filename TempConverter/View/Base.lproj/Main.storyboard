@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s9x-YM-54H">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Temp-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="daylight" translatesAutoresizingMaskIntoConstraints="NO" id="nPQ-gx-Py5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Converter from ºC to ºF, ºK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-EC-Oex">
+                                <rect key="frame" x="89" y="104" width="197" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.74218352740000004" blue="0.44868624940000001" alpha="0.7543109616" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="FQt-KJ-OiQ"/>
+                                    <constraint firstAttribute="height" constant="62" id="aCG-CJ-a1R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ºF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn2-mM-s1S">
+                                <rect key="frame" x="89" y="427" width="197" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.74218352740000004" blue="0.44868624940000001" alpha="0.7543109616" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="Rks-mM-PqY"/>
+                                    <constraint firstAttribute="height" constant="62" id="TCL-zu-HOs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" minimumValueImage="sun.min" catalog="system" maximumValueImage="sun.max.fill" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-EE-Xai">
+                                <rect key="frame" x="53" y="338" width="269" height="31"/>
+                                <color key="tintColor" red="0.95404384898490646" green="0.11457949671920707" blue="0.36223167703849918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.98774188760000003" green="0.75201499459999999" blue="0.1849683523" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.3648500917214923" green="0.98525648455535719" blue="0.57681405539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" systemColor="labelColor"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Pq-ie-Xjc"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azW-Ee-3wZ">
+                                <rect key="frame" x="89" y="217" width="197" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.74218352740000004" blue="0.44868624940000001" alpha="0.7543109616" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="mjK-Dh-9FQ"/>
+                                    <constraint firstAttribute="height" constant="62" id="xlS-tB-wDU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hUN-d9-tHz">
+                                <rect key="frame" x="55" y="609" width="268" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="268" id="0oF-S9-yNJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="lSL-XE-pEk"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Fahrenheit"/>
+                                    <segment title="Kelvin"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.95404384900000005" green="0.11457949670000001" blue="0.36223167699999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wL1-EE-Xai" firstAttribute="top" secondItem="azW-Ee-3wZ" secondAttribute="bottom" constant="59" id="3jJ-EV-c1i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hUN-d9-tHz" secondAttribute="bottom" constant="28" id="5Nc-xp-NGT"/>
+                            <constraint firstItem="azW-Ee-3wZ" firstAttribute="top" secondItem="mCk-EC-Oex" secondAttribute="bottom" constant="51" id="7mo-Sn-fyQ"/>
+                            <constraint firstItem="nPQ-gx-Py5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DmZ-iO-3rI"/>
+                            <constraint firstItem="Bn2-mM-s1S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fpa-Co-ORn"/>
+                            <constraint firstItem="wL1-EE-Xai" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MKi-Un-en6"/>
+                            <constraint firstItem="mCk-EC-Oex" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="P5V-P0-ukK"/>
+                            <constraint firstItem="Bn2-mM-s1S" firstAttribute="top" secondItem="wL1-EE-Xai" secondAttribute="bottom" constant="59" id="Tai-HU-k7C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPQ-gx-Py5" secondAttribute="trailing" id="V9b-3F-JXh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hUN-d9-tHz" secondAttribute="trailing" constant="52" id="VcN-2w-sy0"/>
+                            <constraint firstItem="hUN-d9-tHz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bQ7-NI-8pK"/>
+                            <constraint firstItem="wL1-EE-Xai" firstAttribute="leading" secondItem="hUN-d9-tHz" secondAttribute="leading" id="dc8-Df-jDF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nPQ-gx-Py5" secondAttribute="bottom" id="hDO-Fi-u8b"/>
+                            <constraint firstItem="azW-Ee-3wZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jMu-eW-ccW"/>
+                            <constraint firstItem="nPQ-gx-Py5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-64" id="oi2-mv-jaI"/>
+                            <constraint firstItem="mCk-EC-Oex" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p75-ts-kwE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Temp" id="HMO-CF-6CF">
+                        <barButtonItem key="rightBarButtonItem" image="thermometer.transmission" catalog="system" id="hCQ-g4-DfJ">
+                            <color key="tintColor" red="0.36485009169999999" green="0.75201499459999999" blue="0.57681405539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="948-36-IHs" kind="presentation" id="sY3-fd-iMy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="azW-Ee-3wZ" id="iKe-5S-wkv"/>
+                        <outlet property="convertedTempLabel" destination="Bn2-mM-s1S" id="MyR-uW-rxe"/>
+                        <outlet property="tempSegmentControl" destination="hUN-d9-tHz" id="xVv-y5-vkx"/>
+                        <outlet property="tempSlider" destination="wL1-EE-Xai" id="Jww-F7-Z3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="-27.436281859070466"/>
+        </scene>
+        <!--Temp View Controller-->
+        <scene sceneID="rC0-Ri-N5z">
+            <objects>
+                <viewController id="948-36-IHs" customClass="TempViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wff-oN-GZX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzw-rx-4FH">
+                                <rect key="frame" x="85" y="167" width="204" height="81"/>
+                                <color key="backgroundColor" red="0.38956353069999999" green="0.7551838756" blue="0.56075853109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="ZtB-3R-jYI"/>
+                                    <constraint firstAttribute="width" constant="204" id="eix-RQ-0Ex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcx-As-ApW">
+                                <rect key="frame" x="85" y="392" width="204" height="81"/>
+                                <color key="backgroundColor" red="0.38956353069999999" green="0.7551838756" blue="0.56075853109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="BJA-kg-SlY"/>
+                                    <constraint firstAttribute="width" constant="204" id="c4M-yz-5ks"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hoe-AW-oCT"/>
+                        <color key="backgroundColor" red="0.26300203799999999" green="0.59149760009999997" blue="0.62745904919999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dcx-As-ApW" firstAttribute="leading" secondItem="hoe-AW-oCT" secondAttribute="leading" constant="85" id="4Cg-9s-24m"/>
+                            <constraint firstItem="Dzw-rx-4FH" firstAttribute="top" secondItem="hoe-AW-oCT" secondAttribute="top" constant="167" id="eIP-Ey-m0o"/>
+                            <constraint firstItem="hoe-AW-oCT" firstAttribute="trailing" secondItem="Dzw-rx-4FH" secondAttribute="trailing" constant="86" id="emZ-1o-jCq"/>
+                            <constraint firstItem="hoe-AW-oCT" firstAttribute="bottom" secondItem="dcx-As-ApW" secondAttribute="bottom" constant="174" id="f38-dx-Enc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dcx-As-ApW" secondAttribute="trailing" constant="70" id="oH5-J1-Nol"/>
+                            <constraint firstItem="Dzw-rx-4FH" firstAttribute="leading" secondItem="hoe-AW-oCT" secondAttribute="leading" constant="86" id="oIH-wZ-cpW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fahrenheitLabel" destination="Dzw-rx-4FH" id="g4e-4r-Ttv"/>
+                        <outlet property="kelvinLabel" destination="dcx-As-ApW" id="ZYq-ze-59q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKt-4Q-XqZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="-27.436281859070466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IYn-tL-k7l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s9x-YM-54H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sek-KA-kvG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bSi-pI-3AN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42Z-BB-Hhf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="daylight" width="640" height="1136"/>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
+        <image name="sun.min" catalog="system" width="128" height="123"/>
+        <image name="thermometer.transmission" catalog="system" width="128" height="122"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
